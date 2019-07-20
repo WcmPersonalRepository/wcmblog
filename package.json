@@ -1,0 +1,13 @@
+{
+  "name": "wcmblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vuepress dev",
+    "build": "vuepress build",
+    "pub": "yarn build && cd .vuepress/dist && git init && git add -A && git commit -m 'deploy' && git remote add origin git@github.com:WcmPersonalRepository/WcmPersonalRepository.github.io.git && git push -f origin master"
+  },
+  "author": "",
+  "license": "ISC"
+}
