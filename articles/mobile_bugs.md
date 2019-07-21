@@ -4,7 +4,7 @@
 
 问题描述：iOS 部分 Safari 浏览器版本从外部复制粘贴内容到 input 输入框中，会出现黄色背景。原因是复制粘贴触发了浏览器的自动填充伪类：-webkit-autofill
 
-解决方案 1 用阴影填充：
+解决方案 1 ：用阴影填充
 
 ```css
 input:-webkit-autofill,
@@ -14,7 +14,7 @@ select:-webkit-autofill {
 }
 ```
 
-解决方案 2 修改成透明色：
+解决方案 2 ：修改成透明色
 
 ```css
 input[type='text'] {
@@ -81,4 +81,24 @@ Apps created before iOS 10.0 must use the webkit-playsinline attribute.
 
 ```html
 <video playsinline="true" webkit-playsinline="true"></video>
+```
+
+## ios 键盘弹起把页面弹起回落
+
+问题描述：在 iOS 浏览器中当输入框键盘弹起输入完成后，页面无法自动回落
+
+解决方案：
+
+```js
+document.body.scrollTop && (document.body.scrollTop = 0)
+```
+
+## 微信浏览器中保存长按保存解决方案
+
+问题描述：微信浏览器中可能会出现长按图片不弹起保存图片菜单的情况
+
+解决方案：给图片添加一下样式
+
+```css
+-webkit-touch-callout: none;
 ```
