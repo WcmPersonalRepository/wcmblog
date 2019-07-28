@@ -12,13 +12,13 @@ module.exports = {
       // }
     ],
     sidebar: [
-      '/articles/interview',
       '/articles/mobile_bugs',
-      '/articles/webrtc'
+      '/articles/interview',
+      '/articles/webrtc',
     ],
     sidebarDepth: 2,
     displayAllHeaders: true,
-    lastUpdated: 'Last Updated',
+    lastUpdated: '最近更新时间',
 
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     repo: 'WcmPersonalRepository/wcmblog',
